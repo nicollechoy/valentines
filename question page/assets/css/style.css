@@ -1,0 +1,121 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fad2e0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #e81e63;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+    gap: 40px;
+    position: relative;
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: #ef6292;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+    display: inline-block;
+    min-width: 180px;
+    transform-origin: center;
+}
+
+button:hover {
+    background-color: #e81e63;
+}
+
+#yesButton {
+    background-color: #ef6292;
+}
+
+#noButton {
+    background-color: #ef6292;
+}
+
+#yesButton.pressed {
+    background-color: #e81e63;
+    transform: scale(1.5);
+}
+
+#noButton.pressed {
+    background-color: #f48fb1;
+    transform: scale(0.7);
+}
+
+#thankYouMessage {
+    margin-top: 40px;
+    font-size: 24px;
+    color: #e81e63;
+}
+
+#noMessage {
+    margin-top: 40px;
+    font-size: 24px;
+    color: #e81e63;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
