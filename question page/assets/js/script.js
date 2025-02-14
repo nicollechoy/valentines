@@ -6,7 +6,7 @@ const thankYouPopup = document.getElementById('thankYouPopup');
 // Handle "Yes" button click
 yesButton.onclick = function() {
     // Redirect to the "yes" page
-    window.location.href = "../../../yes/index.html"; // Change to your actual Yes page URL
+    window.location.href = "./yes/index.html"; // Change to your actual Yes page URL
 };
 
 // Handle "No" button click
