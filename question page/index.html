@@ -6,13 +6,13 @@
     <title>Happy Valentine's</title>
 
     <link rel="stylesheet" href="../question page/assets/css/style.css">
-
 </head>
 <body>
     <div id="question-container">
         <h1>Will you be my Valentine?</h1>
         <div class="buttons">
-            <button id="yesButton">Yes</button>
+            <!-- Using an <a> tag for the "Yes" button -->
+            <a href="./yes/index.html" id="yesButton" class="button">Yes</a>
             <button id="noButton">No</button>
         </div>
         <div id="thankYouMessage" class="hidden">Thank you so much for saying Yes!</div>
@@ -26,13 +26,13 @@
         </div>
     </div>
 
-        <!-- Pop-up Modal for the "Thank you" message -->
+    <!-- Pop-up Modal for the "Thank you" message -->
     <div id="thankYouPopup" class="popup-modal hidden">
         <div class="modal-content">
             <h2>Thank you so much for saying Yes!</h2>
         </div>
     </div>
 
-      <script src="../question page/assets/js/script.js"></script>
+    <script src="../question page/assets/js/script.js"></script>
 </body>
 </html>
