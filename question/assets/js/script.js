@@ -19,14 +19,13 @@ noButton.onclick = function() {
     yesButton.style.transform = `scale(${1 + noClickCount * 0.1})`;
 
     if (noClickCount === maxNoClicks) {
-        // Show popup after 1 second
         setTimeout(() => {
             popupModal.style.display = "block";
         }, 1000);
 
-        // Redirect to home page after 3 seconds
+        // Redirect to home page (GitHub Pages-friendly)
         setTimeout(() => {
-            window.location.href = "../index.html";
+            window.location.href = "/index.html"; 
         }, 3000);
     }
 };
